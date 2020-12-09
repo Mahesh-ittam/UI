@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+ <title>Naukri Registration Form</title>
+</head>
+<body bgcolor="grey">
+    <style>
+        body {
+            background-image: url("dreamjob.jpg");
+            }
+    </style>
+    <center>
+        <form method="GET">
+            <h2>NAUKRI REGISTRATION FORM</h2>
+            <table bgcolor="grey">
+                <tr>
+                    <td>FIRST NAME:</td>
+                    <td><input type="text" name="fname" placeholder="FIRSTNAME">(Max 30 character)</td>
+                </tr>
+                <br>
+                <tr>
+                    <td>LAST NAME:</td>
+                    <td><input type="text" name="lname" placeholder="LASTNAME">(Max 30 character)</td>
+                </tr>
+                <br>
+                <tr>
+                    <td>DATE OF BIRTH:</td>
+                    <td><input type="date" name="date" min="11-06-1880" max="10-06-2050"></td>
+                </tr>
+                <br>
+                <tr>
+                    <td>EMAIL ID:</td>
+                    <td><input type="email" name="Email_ID"></td>
+                </tr>
+                <tr>
+                    <td>MOBILE NUMBER:</td>
+                    <td><input type="text" name="phone_no" placeholder="10 digits number">(Max 10 Digits)</td>
+                </tr>
+                <br />
+                <tr>
+                    <td>GENDER:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male">Male
+                        <input type="radio" name="gender" value="female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td>ADDRESS:</td>
+                    <td><textarea cols="60" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>CITY:</td>
+                    <td><input type="text" name="city"></td>
+                </tr>
+                <tr>
+                    <td>PINCODE:</td>
+                    <td><input type="text" name="pin_code" placeholder="6 digts number"></td>
+                </tr>
+                <tr>
+                    <td>STATE:</td>
+                    <td>
+                        <select name="state">
+                            <option>TELANAGANA</option>
+                            <option>ANDHRA PRADESH</opyion>
+                            <option>TAMILNADU</option>
+                            <option>HARYANA</option>
+                            <option>BIHAR</option>
+                            <option>NEPAL</option>
+                            <option>KERALA</option>
+                            <option>KARNATAKA</option>
+                            <option>GOA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>COUNTRY:</td>
+                    <td>
+                        <select name="Country">
+                            <option>INDIA</option>
+                            <option>USA</option>
+                            <option>UAE</option>
+                            <option>CANADA</option>
+                            <option>NETHERLAND</option>
+                            <option>SWEDAN</option>
+                            <option>MALDIVES ISLAND</option>
+                            <option>SRILANKA</option>
+                    </td>
+
+</tr>
+                <tr>
+                    <td>QUALIFICATION:</td>
+                    <td>
+                        <input type="radio" name="BTECH" value="BTECH">BTECH
+                        <input type="radio" name="INTERMEDIATE" value="INTERMEDIATE">Inter
+                        <input type="radio" name="10TH" value="10TH">10TH
+                        <input type="radio" name="B.COM" value="B.COM">B.COM
+                        <input type="radio" name="B.SC" value="B.SC">B.SC
+                        <input type="radio" name="MBA" value="MBA">MBA
+                        <input type="radio" name="ITI" value="ITI">ITI
+                        <input type="radio" name="BE" value="BE">BE
+                        <input type="radio" name="OTHER" value="OTHER">
+                    </td>
+                </tr>
+                <tr>
+                    <td>HOBBIES:</td>
+                    <td>
+                        <select name="Eg:Traveller">
+                            <option>Reading Books</option>
+                            <option>Travel</opyion>
+                            <option>Cooking </option>
+                            <option>Exersing and Healthcare</option>
+                            <option>Playing Virtual Games</option>
+                            <option>Nature</option>
+                           
+                        </select>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>UPLOAD PHOTO:</td>
+                    <td><input type="file" name="photo"></td>
+                </tr>            
+                <tr>
+                    <td>PREFERED CITY:</td>
+                    <td>
+                        <select name="state">
+                            <option>HYDERABAD</option>
+                            <option>MUMBAI</opyion>
+                            <option>NOIDA</option>
+                            <option>BANGALORE</option>
+                            <option>PUNE</option>
+                            <option>DELHI</option>
+                            <option>OTHERS</option>
+                        </select>
+                    </td>
+                    </tr>
+                 </table>
+
+            <br>
+            <div>
+                <button type="button" onclick="alert"(" Registration Success")>Submit </button>
+                <button type="button" onclick="alert"(" Registration error you enter the details again")>Reset</button>
+                <a href="login.html">Login</a>
+                
+            </div>
+
+        </form>
+</body>
+</html>
