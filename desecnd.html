@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p>Descending order</p>
+<button onclick="myFunction()">click to sort</button>
+
+<p id="sort"></p>
+
+<script>
+
+var numbers = ["0", "5", "9", "6","3","1","2"];
+document.getElementById("sort").innerHTML = numbers;
+
+function myFunction() {
+  numbers.sort();
+  numbers.reverse();
+  document.getElementById("sort").innerHTML = numbers;
+}
+</script>
+
+</body>
+</html>

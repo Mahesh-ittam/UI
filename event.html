@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    
+<body onload="myFunction()"><hr>
+   <h1><p id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse over me</h1></p><hr>
+   <input type="text" onkeydown="validateForm()"> <hr>
+   <h1>Hello World!</h1> 
+   
+
+
+<button onclick="getElementById('demo').innerHTML=Date()">What is the time?</button>
+<hr>
+<p>Mode of transport</p>
+
+//-------onchange-----------
+<select id="mySelect" onchange="myFunction()">
+    <option value="Transport">Transport</option>
+  <option value="car">Car</option>
+  <option value="Bus">Bus</option>
+  <option value="Train">Train</option>
+  <option value="Flight">Flight</option>
+</select>
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  document.getElementById("demo").innerHTML = "You selected: " + x;
+}
+function mouseOver() {
+  document.getElementById("demo").style.color = "blue";
+}
+
+function mouseOut() {
+  document.getElementById("demo").style.color = "green";
+}
+
+function validateForm() {
+  alert("You pressed a key inside the input field");
+}
+
+function myFunction() {
+  alert("Page is loaded");
+}
+
+
+</script>
+
+</body>
+</html>
