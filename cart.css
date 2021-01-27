@@ -19,6 +19,8 @@ html, body {
     margin: 0;
     padding: 0;
     min-height: 100%;
+    background-image: url('123456.jpg');
+    
 }
 /*----------navigaton bar---------*/
 #navbar {
@@ -82,7 +84,6 @@ html, body {
 .content-section {
     margin: 1em;
 }
-
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -224,7 +225,7 @@ html, body {
 }
 
 .shop-item-image {
-    height: 250px;
+    height: 300px;
 }
 
 .shop-item-details {
@@ -235,15 +236,16 @@ html, body {
 
 .shop-item-price {
     flex-grow: 1;
-    color: #333;
+    color: rgb(0, 0, 0);
 }
 
 .shop-items {
-    display: flex;
+    display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 /*------------body section-----*/
+
 /*-------------footer--------------------------*/
 #container {
     width: 100%;
@@ -253,13 +255,13 @@ html, body {
 #part1 {
     width: 100%;
     height: 280px;
-    background-color: #292929
+    background-color: #f8f7f7
 }
 
 #part2 {
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     position: relative;
     top: -15px
 }
@@ -274,11 +276,11 @@ html, body {
 
 #sitelink {
     font-size: 35px;
-    color: #f44336
+    color: #000000
 }
 
 #sitelink:hover {
-    color: #e65100
+    color: #000000
 }
 
 #title {
@@ -323,7 +325,7 @@ html, body {
 
 .link:hover,
 .link1:hover {
-    color: #e65100
+    color: #000000
 }
 
 #visit {
@@ -509,8 +511,7 @@ html, body {
     #email,
     .btn {
         position: relative;
-        top: 0px;
-        padding:auto;
+        top: 0px
     }
 
     #part1 {
@@ -521,16 +522,42 @@ html, body {
 /*-------------footer--------------------------*/
 
 /*-------------body--------------------------*/
-.section-header{
-    font-family:italic;
 
-}
-.cart-header {
-    font-weight: italc;
-    font-size: 10px;
+/*cart section*/
+
+.cart-display{
+    margin: 0;
+    padding: .5em 4.5em;
+	font-family: 'Kulim Park', sans-serif;
+    background-size: contain,cover;
     color: rgb(0, 0, 0);
 }
-
+.cart-display h1{
+	text-align: center;
+	font-size: 2.5em;
+	font-family: 'Alegreya SC', serif;
+	
+	color: lightgrey;
+}
+.cart-row {
+    display: flex;
+}
+.cart-item {
+    width: 45%;
+}
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+}
+.cart-quantity {
+    width: 35%;
+}
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: rgb(0, 0, 0);
+}
 .cart-column {
     display: flex;
     align-items: center;
@@ -539,92 +566,35 @@ html, body {
     padding-bottom: 10px;
     margin-top: 10px;
 }
-
-.cart-row {
-    display: flex;
-}
-
-.cart-item {
-    width: 60%;
-}
-
-.cart-price {
-    width: 20%;
-    font-size: 1.2em;
-    color: #333;
-}
-
-.cart-quantity {
-    width: 35%;
-    padding:px;
-}
-
-.cart-item-title {
-    color: #333;
-    margin-left: .5em;
-    font-size: 1.2em;
-}
-
-.cart-item-image {
-    width: 75px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.btn-danger {
-    color: white;
-    background-color: #EB5757;
-    border: none;
-    border-radius: .3em;
-    font-weight: bold;
-}
-
-.btn-danger:hover {
-    background-color: #CC4C4C;
-}
-
-.cart-quantity-input {
-    height: 34px;
-    width: 50px;
-    border-radius: 5px;
-    border: 1px solid #212c30;
-    background-color: #eee;
-    color: #333;
-    padding: 0;
-    text-align: center;
-    font-size: 1.2em;
-    margin-right: 25px;
-}
-
-.cart-row:last-child {
-    border-bottom: 1px solid black;
-}
-
-.cart-row:last-child .cart-column {
-    border: none;
-}
-
 .cart-total {
     text-align: end;
     margin-top: 10px;
     margin-right: 10px;
 }
-
 .cart-total-title {
     font-weight: bold;
     font-size: 1.5em;
-    color: black;
+   color: rgb(0, 0, 0);
     margin-right: 20px;
 }
-
 .cart-total-price {
-    color: #333;
-    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-size: 1.1em;
 }
-
 .btn-purchase {
     display: block;
-    margin: 40px auto 80px auto;
-    font-size: 1.75em;
+    margin: 20px auto 40px auto;
+    font-size: 1em;
+}
+
+/*javascript appears*/
+
+.cart-item-title{
+	padding: 10px;
+}
+.cart-quantity-input{
+	width: 80px;
+	height: 30px;
+	border-radius: 30px;
 }
 /*-------------body--------------------------*/

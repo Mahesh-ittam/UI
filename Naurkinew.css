@@ -1,0 +1,123 @@
+  
+  html,body{
+    background-image: url('0.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    }
+.reg-form {
+    border-radius: 50%;
+    border-radius: 12px;
+    
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.4);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 15px auto;
+    padding: 15px;
+    width: 600px;
+  }
+   
+  .form-heading {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 50px;
+  }
+   
+  .helper-text {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+  .field-row {
+    position: relative;
+    width: 100%;
+  }
+   
+  .form-label {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 5px 5px 0;
+    text-align: right;
+    width: 100px;
+  }
+   
+  .field {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 240px;
+  }
+  .field.field-short {
+    width: 70px;
+  }
+  .message {
+    display: inline-block;
+  }
+   
+  :required + .message::before {
+    content: "* ";
+  }
+  .text-field:focus:required:valid {
+    outline: green solid 2px;
+  }
+  .text-field:focus:required:invalid {
+    outline: rgb(255, 1, 1) solid 2px;
+  }
+  .date-field:focus:in-range {
+    outline: green solid 2px;
+  }
+  .date-field:focus:out-of-range {
+    outline: rgb(255, 0, 0) solid 2px;
+  }
+   
+  .website-field:focus:valid {
+    outline: green solid 2px;
+  }
+  .website-field:focus:invalid {
+    outline: rgb(250, 2, 2) solid 2px;
+  }  
+  .form-button {
+    background: linear-gradient(180deg, #f0f0f0, #000000);
+    border: none;
+    border-radius: 0;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .first-name-field:focus:invalid + .message::after {
+    color: rgb(129, 1, 1);
+    content: "Required your first name";
+  }
+  .dob-field:focus:out-of-range + .message::after {
+    color: rgb(148, 0, 0);
+    content: "Date is out of range";
+  }
+   
+  .tel-field:focus:invalid + .message::after {
+    color: rgb(160, 3, 3);
+    content: "Required telephone number";
+  }
+   
+  .email-field:focus:invalid + .message::after {
+    color: rgb(165, 0, 0);
+    content: "Required email address";
+  }
+  .pin_code-field:focus:invalid + .message::after {
+    color: rgb(143, 1, 1);
+    content: "Pin Code";
+  }
+   
+  .address-field:focus:invalid + .message::after {
+    color: rgb(173, 7, 7);
+    content: "Required permanent address";
+  }
+   
+  .website-field:focus:invalid + .message::after {
+    color: rgb(155, 4, 4);
+    content: "Required valid URL";
+  }
